@@ -1,0 +1,12 @@
+1.	pip install virtualenv // to install all the environment fetures
+2.	virtualenv internship_venv // it will store all the libraries in internship_venv folder
+3.	internship_venv\Scripts\activate // to activate virtual environment (we'll work only when the virtual environment is activated)
+4.	deactivate // to deactivate virtual enviroment
+5.	pip install django
+6.	django-admin startproject resumePage
+
+--------------------------------------------------------------------------
+
+
+1. django-admin startapp Home
+2. python manage.py runserver

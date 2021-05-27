@@ -1,0 +1,14 @@
+Git Commands
+1. mkdir folder_name // mkdir is a command to make new directory
+2. cd folder_name // cd is a command to change the directory
+3. make a demo file as file_name
+4. git init // this will make a .git folder, and it will be by default hidden
+5. git status // to show the status of the file
+6. git add . // this will add all the files ready to upload in a github
+7. git status // to show the status of the file
+8. git commit -m 'This is a demo commit'
+9. git push 
+---------------------------------------------------
+1.	
+
+git remote add origin https://github.com/ankitpakhale/Silverwing_Internship.git
