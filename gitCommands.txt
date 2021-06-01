@@ -7,7 +7,7 @@ Git Commands
 6. git add . // this will add all the files ready to upload in a github
 7. git status // to show the status of the file
 8. git commit -m 'This is a demo commit'
-9. git push 
+9. git push -u origin master
 ---------------------------------------------------
 1.	
 
