@@ -61,6 +61,19 @@
 								</ul>
 							</div>
 						</div>
+
+<!--                         Django Conditions -->
+<!--                        {% if condition %}-->
+<!--                        code-->
+<!--                        {% else %}-->
+<!--                        code-->
+<!--                        {% endif %}-->
+
+
+<!--                        {% for i in something %}-->
+<!--                        code-->
+<!--                        {% endfor %}-->
+
 						<div class="col-md-9 col-sm-8">
 							<div class="right-header">
 								<ul>
@@ -68,11 +81,11 @@
                                         <li><a href="my-account.html"><i class="fa fa-user"></i>My account</a></li>
                                         <li><a href="#"><i class="fa fa-shopping-cart"></i>My cart</a></li>
                                         <li><a href="wishlist.html"><i class="fa fa-heart"></i>My wishlist</a></li>
-                                        <li><a href="#"><i class="fa fa-lock"></i>Log out</a></li>
-                                        <li><a href="#"><i class="fa fa-lock"></i>Change Password</a></li>
+                                        <li><a href="{% url 'account_logout' %}"><i class="fa fa-lock"></i>Log out</a></li>
+                                        <li><a href="{% url 'account_change_password' %}"><i class="fa fa-lock"></i>Change Password</a></li>
                                     {% else %}
-									    <li><a href="#"><i class="fa fa-lock"></i>Login</a></li>
-                                        <li><a href=""><i class="fa fa-lock"></i>Signup</a></li>
+									    <li><a href="{% url 'account_login' %}"><i class="fa fa-lock"></i>Login</a></li>
+                                        <li><a href="{% url 'account_signup' %}"><i class="fa fa-lock"></i>Signup</a></li>
                                     {% endif %}
 								</ul>
 							</div>
@@ -85,7 +98,7 @@
 					<div class="row">
 						<div class="col-sm-2 col-md-2 col-xs-4">
 							<div class="logo">
-								<a href="#" style="font-family: Helvetica, Arial, sans-serif; font-size: 50px; color: navajowhite"  >apparel</a>
+								<a href="/home" style="font-family: Helvetica, Arial, sans-serif; font-size: 50px; color: navajowhite"  >apparel</a>
 							</div>
 						</div>
 						<div class="col-sm-10 col-md-10 col-xs-8 static">
@@ -93,7 +106,7 @@
 							    <div class="mainmenu clearfix hidden-sm hidden-xs">
                                     <nav>
                                         <ul>
-                                            <li><a href="#">Home</a>
+                                            <li><a href="{% url 'Home:Home' %}">Home</a>
 
                                             </li>
                                             <li><a href="shop.html">Shop</a>
